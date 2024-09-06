@@ -1,3 +1,143 @@
-body{
-    background-color: dodgerblue;
-  }
+body {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  background-color: rgb(230, 239, 246);
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh;
+  margin: 0; 
+}
+
+/* --------------------------- lAYOUT --------------------------- */
+.container {
+  background-color: white;
+  width: 625px; 
+  text-align: left;
+  box-sizing: border-box;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.top {
+  padding: 30px;
+  background-color: white; 
+  border-radius: 10px;
+  border-radius: 10px;
+  margin-bottom: -15px;
+}
+
+.bottom {
+  color: white;
+  display: flex; /* Use flexbox for layout */
+  gap: 0; /* Gap between left and right */
+  box-sizing: border-box; /* Include padding/border in width/height */
+}
+
+.left,.right {
+  flex: 1; /* Equal width for both sides */
+  padding: 30px; /* Consistent padding */
+  display: flex; /* Center text vertically */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center text vertically */
+}
+
+.left {
+  background-color: rgb(43, 179, 177);
+  border-bottom-left-radius: 10px;
+}
+
+.right {
+  background-color: rgb(74, 190, 189);
+  border-bottom-right-radius: 10px;
+  padding: 20px; /* Adjust padding */
+  border-right: none; /* Remove border from the right side */
+}
+
+.title1 {
+  letter-spacing: 1px;
+  font-size: 20px;
+  color: rgb(43, 179, 177);
+  font-weight: 700;
+}
+
+.title2 {
+  margin-top: 0; /* Remove negative margin */
+  font-size: 18px;
+  font-weight: 400;
+  color: white; /* Added for visibility */
+}
+
+.subtitle1 {
+  font-weight: 500; /* Changed to a valid font-weight */
+  color: rgb(191, 223, 50);
+}
+
+.Gtext {
+  color: #98a6bd;
+  font-weight: 100; /* Changed to a valid font-weight */
+  line-height: 30px;
+}
+
+.BNum {
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.price-container {
+  display: flex; /* Use flexbox to align items horizontally */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 10px; /* Adds spacing below */
+}
+
+.per-month {
+  letter-spacing: 1px;
+  font-size: 0.95em;
+  color: rgba(246, 255, 255, 0.733);
+  font-weight: 100; /* Light font weight */
+  margin-left: 10px; /* Spacing between price and text */
+}
+
+.WT1 {
+  color: rgb(246, 255, 255);
+  font-weight: 300; /* Light font weight */
+  margin-top: 10px; /* Adds spacing */
+  line-height: 1.4; /* Improves readability */
+}
+
+button.sign-up {
+  color: white;
+  background-color: rgb(191, 223, 50); /* Background color */
+  border: none; /* No border */
+  border-radius: 5px; /* Curved corners */
+  padding: 10px 20px; /* Padding (10px top/bottom, 20px left/right) */
+  font-size: 16px; /* Font size (adjust as needed) */
+  font-weight: 500; /* Font weight (optional) */
+  text-decoration: none; /* No underline or text decoration */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for background color on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.13); /* Shadow with horizontal offset, vertical offset, blur radius, and color */
+}
+
+button.sign-up:hover {
+  background-color: rgb(170, 200, 40); /* Slightly darker background on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+.right ul {
+  color: rgb(246, 255, 255);
+  font-size: 0.80em;
+  line-height: 20px;
+  font-weight: 100;
+  list-style-type: none; /* Remove list dots */
+  padding-left: 0; /* Remove left padding */
+  margin: 0; /* Remove default margin */
+  margin-left: 20px; /* Add left margin to move the list items */
+
+}
+
+.right h3.title2 {
+  margin-left: 20px; /* Add left margin to move the heading */
+}
+
